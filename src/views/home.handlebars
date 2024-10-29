@@ -1,0 +1,16 @@
+
+  <div class="container">
+    <h1>Lista de Productos</h1>
+    <a href="/realtimeproducts">Lista productus</a>
+    <ul id="productList">
+     {{#each products}}
+      <li>
+                <div class="item-info">
+                    <span>{{this.name}}</span>
+                    <span>${{this.price}}</span> 
+                </div>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+

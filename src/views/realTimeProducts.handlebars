@@ -1,0 +1,23 @@
+    <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Nombre del producto" required>
+        <input type="number" id="productPrice" placeholder="Precio" required>
+        <button type="submit">Agregar</button>
+    </form>
+      <div id="productList">
+
+        {{#each products}}
+            <li id="{{this.id}}">
+                    <div class="item-info">
+                        <span>{{this.id}}</span>
+                        <span>{{this.name}}</span>
+                        <span>${{this.price}}</span> 
+                    
+                        <button type="submit" class="delete-button" data-id="{{this.id}}"  onclick="eliminarProducto({{this.id}})">Eliminar</button>
+                   
+            </li>
+        {{/each}}
+      </div>
+
+
+     <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/product.js"></script>

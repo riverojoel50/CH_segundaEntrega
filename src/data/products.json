@@ -1,0 +1,27 @@
+[
+     {
+          "id": 1,
+          "name": "Televisor 4K Ultra HD",
+          "price": 599.99
+     },
+     {
+          "id": 2,
+          "name": "Lavadora Automática",
+          "price": 399.99
+     },
+     {
+          "id": 3,
+          "name": "Freidora de Papas",
+          "price": 79.99
+     },
+     {
+          "id": 4,
+          "name": "Heladera No Frost",
+          "price": 75000
+     },
+     {
+          "id": 6,
+          "name": "Radio",
+          "price": 700
+     }
+]
